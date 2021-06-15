@@ -122,7 +122,7 @@
         </div>
 
         <div class="sentry:video">
-            <video src="video-1.mp4" autoplay loop></video>
+            <video src="video-1.mp4" muted loop></video>
 
             <div class="sentry:overlay"></div>
         </div>
@@ -333,6 +333,14 @@
             // clearInterval(inst); // uncomment this if you want to stop refreshing after one cycle
         }
     }
+
+    const vid = document.querySelector('video');
+    vid.playbackRate = .75;
+    vid.play()
+    // document.addEventListener('DOMContentLoaded', () => {
+    //     setTimeout(() => {
+    //     }, 100);
+    // });
 </script>
 
 </html>
